@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超人的三明治 | 能量满满，一口超人！</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        /* 头部 - 超人主题配色（红蓝经典） */
+        header {
+            background-color: #0047ab; /* 深蓝色 */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #ff0000; /* 红色强调线 */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* 标题立体感 */
+        }
+        /* 导航栏 */
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700; /* 悬停金色 */
+        }
+        /* 主内容区 */
+        .main-content {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        /* 三明治展示卡牌式布局 */
+        .sandwich-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .sandwich-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .sandwich-card:hover {
+            transform: translateY(-5px);
+        }
+        .sandwich-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .card-info {
+            padding: 15px;
+            text-align: center;
+        }
+        /* 联系方式区块 */
+        .contact-section {
+            background: white;
+            padding: 40px 20px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .contact-section h2 {
+            color: #0047ab;
+            margin-bottom: 30px;
+        }
+        .contact-info {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            border-left: 3px solid #ff0000;
+        }
+        /* 页脚 */
+        footer {
+            background-color: #0047ab;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8em; }
+            .sandwich-gallery { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>超人的三明治</h1>
+        <nav>
+            <a href="#menu">招牌套餐</a> | 
+            <a href="#contact">能量补给站</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="sandwich-gallery" id="menu">
+            <!-- 三明治卡片 -->
+            <div class="sandwich-card">
+                <img src="smz1.jpg" alt="经典超人套餐">
+                <div class="card-info">
+                    <h3>经典烤肠三明治 7元/个</h3>
+                    <p>烤肠 | 新鲜蔬菜 | 当日现做 | 秘制红披风酱</p>
+                </div>
+            </div>
+            <div class="sandwich-card">
+                <img src="smz2.jpg" alt="能量爆发套餐">
+                <div class="card-info">
+                    <h3>能量小汉堡 6元/个</h3>
+                    <p>鸡排 | 太阳蛋 | 新鲜时蔬 | 当日现做</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section" id="contact">
+            <h2>☎ 预定方式&定制口味</h2>
+            <div class="contact-info">
+                <p>电话：130-6777-9572</p>
+                <p>微信：130-6777-9572</p>
+                <p>地址：上海市宝山区美兰湖
+                <p>营业时间：6:00 - 22:00（全年无休）</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 超人的三明治 | 每一口都让你拯救世界！
+    </footer>
+</body>
+</html>
